@@ -9,4 +9,4 @@
     path: /mnt
     src: "UUID={{external_storage_device_id}}"
     fstype: ext4
-    state: present
+    state: mounted
