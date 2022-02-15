@@ -7,6 +7,6 @@
 - name: Mount up device by UUID
   ansible.posix.mount:
     path: /mnt
-    src: "UUID={{external_storage_device_id}}"
+    src: "UUID={{ external_storage_device_id }}"
     fstype: ext4
     state: mounted
