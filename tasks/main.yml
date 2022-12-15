@@ -3,10 +3,11 @@
   assert:
     that:
       - external_storage_device_id is defined
+      - target_directory is defined
 
 - name: Mount up device by UUID
   ansible.posix.mount:
-    path: /mnt
+    path: "{{ target_directory }}"
     src: "UUID={{ external_storage_device_id }}"
     fstype: ext4
     state: mounted

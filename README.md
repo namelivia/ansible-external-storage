@@ -14,3 +14,4 @@ roles:
 
 ## Required variables
  - `external_storage_device_id` UUID for the device to be mounted
+ - `target_directory` Target directory in which the device will be mounted
